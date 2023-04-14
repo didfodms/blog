@@ -1,7 +1,7 @@
-title: Long Haul
+title: 자기소개서
 description: Long Form Jekyll theme built with SASS
 
-url: https://long-haul.netlify.app
+url: https://didfodms.github.io
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -9,7 +9,7 @@ permalink: blog/:title/
 # header: large
 
 sass:
-    style: compressed
+  style: compressed
 
 markdown: kramdown
 highlighter: rouge
@@ -17,21 +17,23 @@ plugins: [jekyll-paginate]
 paginate: 5
 
 navigation:
-    - title: Home
-      url: /index.html
-    - title: About
-      url: /about
-    - title: Contact
-      url: /contact
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Velog
+    url: /velog
 
 social:
-    github: brianmaierjr
-    twitter: brianmaierjr
-    facebook: brianmaierjr
-    email: brimaidesigns@gmail.com
-    linkedin: brianmaierjr
+  github: brianmaierjr
+  twitter: brianmaierjr
+  facebook: brianmaierjr
+  email: brimaidesigns@gmail.com
+  linkedin: brianmaierjr
 
 google_analytics: "UA-58263416-1"
 
 disqus:
-    shortname: brianmaierjr
+  shortname: brianmaierjr
