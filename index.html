@@ -1,36 +1,162 @@
 ---
 layout: default
-title: Long Haul
+title: About Long Haul
 ---
 
-<div class="home" id="home">
-  <h1 class="pageTitle">Recent Posts</h1>
-  <div class="posts noList">
-    {%- for post in paginator.posts -%}
-    <article>
-      <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-      </h3>
-      <p>
-        {%- if post.description -%}{{ post.description }}{%- else -%}{{
-        post.excerpt | strip_html }}{%- endif -%}
-      </p>
-    </article>
-    {%- endfor -%}
+<div id="about" class="post">
+  <div class="about-item">
+    <h1 class="pageTitle text-shadow">꾸준함을 믿습니다</h1>
+    <!-- <img src="{{ '/assets/img/wood.jpg' }}" alt=""> -->
+    <video
+      class="about-item"
+      autoplay
+      loop
+      muted
+      style="height: 360px; display: block; margin: 0 auto"
+    >
+      <source src="{{ '/assets/video/coding.mp4' }}" type="video/mp4" />
+    </video>
+    <br />
+    <!-- <p class="intro">Long Haul is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p> -->
+    <br />
+    <br />
+    <p class="wide">
+      컴퓨터교육과 3학년 양래은입니다.<br />
+      대학에 들어와서 코딩을 처음 접한 후,<br />각종 활동들과 교내/교외 대회에
+      참가하며 수상 경력을 쌓아왔습니다.<br />
+      웹 개발에 관심이 많으며, 알고리즘 문제 해결에 흥미가 있습니다.<br />
+      현재는 ChatGPT API를 활용하여 여러 가지를 시도하고 있습니다.
+    </p>
   </div>
-  <!-- Pagination links -->
-  <div class="pagination">
-    {%- if paginator.previous_page -%}
-    <a
-      href="{{ paginator.previous_page_path }}"
-      class="previous button__outline"
-      >Newer Posts</a
-    >
-    {%- endif -%} {%- if paginator.next_page -%}
-    <a href="{{ paginator.next_page_path }}" class="next button__outline"
-      >Older Posts</a
-    >
-    {%- endif -%}
+  <br />
+  <br />
+  <div>
+    <h2 class="subTitle blue">Skills</h2>
+    <!-- <ul>
+		<li>Built with the <a href="https://github.com/jekyll/jekyll-sass-converter">Jekyll SASS convertor</a> plugin</li>
+  		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
+  		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
+  		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
+  		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
+      <li>5 Post Loop with excerpt on Home Page</li>
+  		<li>Previous / Next Post Navigation</li>
+      <li>Estimated Reading Time for posts</li>
+  		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
+  		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
+  	</ul> -->
+    <ul>
+      <li class="about-item">HTML5, CSS3 기본 지식 및 마크업 능력</li>
+      <li class="about-item">JavaScript</li>
+      <li class="about-item">Node.js, Express</li>
+      <li class="about-item">REST API를 활용한 Web 개발 경험</li>
+      <li class="about-item">
+        Visualization Library <i>(Chart.js, Sweet-alert2.js, AR.js)</i>
+      </li>
+      <li class="about-item">클라우드 서비스 이용 경험 <i>(AWS)</i></li>
+    </ul>
+  </div>
+  <br />
+  <div>
+    <h2 class="subTitle olive">Work Experience</h2>
+    <ul>
+      <li class="about-item">
+        실리콘밸리 Mygenbio 6주 해외 인턴 근무
+        <i>(2023.01 ~ 2023.02, 현재 재택근무로 전환 후 진행중)</i>
+      </li>
+    </ul>
+  </div>
+  <br />
+  <div>
+    <h2 class="subTitle orange">Projects</h2>
+    <ul>
+      <li class="about-item">
+        ChatGPT API와 ZEP 메타버스 플랫폼을 접목한 교육 환경 웹 개발
+        <i>(2023.03. ~)</i>
+      </li>
+      <li class="about-item">
+        ChatGPT API를 활용한 EMR FHIR 표준화 웹 개발 <i>(2023.03. ~)</i>
+      </li>
+      <li class="about-item">
+        제주대학교 소프트웨어 라운지 / 소프트웨어 라운지 홈페이지 개발
+        <i>(2023.04. ~)</i>
+      </li>
+      <li class="about-item">
+        J-ART 창의예술교육랩L / AR.js를 활용한 그림책 AR 웹 개발
+        <i>(2022.10. ~ 2022.11.)</i>
+      </li>
+    </ul>
+  </div>
+  <br />
+  <div>
+    <h2 class="subTitle maroon">Awards</h2>
+    <ul>
+      <li class="about-item">
+        빅데이터 기반 제주 지역사회 분석 경진대회 - 우수 <i>(2022.02)</i>
+      </li>
+      <li class="about-item">CFC 리빙랩 프로그램 - 최우수 <i>(2022.01)</i></li>
+      <li class="about-item">
+        GREAT 메타버스 콘텐츠 제작 공모전 - 우수 <i>(2022.01)</i>
+      </li>
+      <li class="about-item">
+        2021 WISET SGRC 여대생 프로그래밍 경진 대회 - 금상 <i>(2021.10)</i>
+      </li>
+      <li class="about-item">
+        LINC+ 사업단 코딩 경진 대회 - 동상 <i>(2021.08)</i>
+      </li>
+    </ul>
+  </div>
+  <br />
+  <div>
+    <h2 class="subTitle aqua">Activities</h2>
+    <ul>
+      <li class="about-item">
+        제주대학교 컴퓨터교육과 SW개발기초 과목 멘토 <i>(2023.03 ~)</i>
+      </li>
+      <li class="about-item">
+        제주대학교 컴퓨터교육과 'MEMORY' 학생회 부학회장 <i>(2022.12 ~)</i>
+      </li>
+      <li class="about-item">
+        제주대학교 컴퓨터교육과 'COMMA' 학생회 교육차장 역임
+        <i>(2021.12 ~ 2022.11)</i>
+      </li>
+      <li class="about-item">
+        제주대학교 컴퓨터교육과 'COMMA' 학생회 신입생 C언어 멘토링 진행
+        <i>(2022.03 ~ 2022.06)</i>
+      </li>
+      <li class="about-item">
+        제주대학교 컴퓨터교육과 웹앱프로그래밍 과목 멘토
+        <i>(2022.09 ~ 2022.12)</i>
+      </li>
+      <li class="about-item">WFK-IT 몽골 해외 교육 봉사단 <i>(2022.08)</i></li>
+      <li class="about-item">
+        제주대학교 소프트웨어 라운지 멘토 <i>(2021.12 ~)</i>
+      </li>
+      <li class="about-item">
+        WISET J-Leaders 활동단 <i>(2021, 2022, 2023, 우수 활동단 선정 1회)</i>
+      </li>
+    </ul>
+  </div>
+  <br />
+  <div>
+    <h2 class="subTitle silver">Contact</h2>
+    <ul class="about-item">
+      <a
+        class="zt-icon"
+        href="https://github.com/{{ site.social.github }}"
+        target="_blank"
+      >
+        <img src="/assets/img/github.png" alt="" />
+      </a>
+      <a class="zt-icon" href="https://instagram.com/rae___eun" target="_blank">
+        <img src="/assets/img/instagram.png" alt="" />
+      </a>
+      <a class="zt-icon" href="mailto:{{ site.social.email }}" target="_blank">
+        <img
+          style="width: 2em; height: 2em"
+          src="/assets/img/gmail.png"
+          alt=""
+        />
+      </a>
+    </ul>
   </div>
 </div>

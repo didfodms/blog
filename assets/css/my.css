@@ -1,5 +1,12 @@
+html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .header {
-  background-image: url("../img/wood.jpeg");
+  background-image: url("../img/water.jpeg");
 }
 
 .about-item {
@@ -8,4 +15,118 @@
 }
 .about-item.is-visible {
   opacity: 1; /* 요소가 화면에 보일 때 opacity 값을 1로 변경 */
+}
+
+#about {
+  /* font-family: "Noto Serif KR", serif; */
+  /* font-family: "Song Myung", serif; */
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.pageTitle {
+  /* font-family: "Noto Serif KR", serif; */
+  font-family: "Song Myung", serif;
+  /* font-family: "Nanum Myeongjo", serif !important; */
+}
+
+.subTitle {
+  /* font-family: "Noto Serif KR", serif; */
+  /* font-family: "Song Myung", serif; */
+  /* font-family: "Nanum Myeongjo", serif !important; */
+  font-family: "Permanent Marker", cursive;
+  opacity: 0.8;
+}
+
+.pageTitle,
+.subTitle {
+  font-weight: 500;
+}
+
+p,
+ul {
+  font-weight: 200;
+}
+
+.wide {
+  line-height: 2.5em;
+}
+
+ul {
+  font-weight: 100;
+}
+
+.blue {
+  color: #7da6ca;
+}
+
+.olive {
+  color: #569c7d;
+}
+
+.orange {
+  color: #c48c5b;
+}
+
+.maroon {
+  color: #b17f97;
+}
+
+.aqua {
+  color: #82b2c5;
+}
+
+.silver {
+  color: #ddd;
+}
+
+a {
+  background-color: black;
+  color: black;
+}
+a:hover {
+  background-color: black;
+  color: black;
+}
+
+.zt-icon {
+  margin: 0;
+}
+
+.zt-icon:first-child {
+  margin-right: 15px;
+}
+.zt-icon:nth-child(2) > img {
+  margin-right: 20px;
+}
+.zt-icon:nth-child(3) > img {
+  margin-bottom: 11px;
+}
+.zt-icon > img {
+  width: 3em;
+  height: 3em;
+  margin: 0;
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 5px rgba(71, 71, 71, 0.7);
+}
+
+/* blue olive orange maroon aqua */
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(145, 145, 145);
+  border-radius: 10px;
 }

@@ -3,7 +3,7 @@ let observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       // 요소가 화면에 보이면 'is-visible' 클래스 추가
       entry.target.classList.add("is-visible");
-      console.log(entry.target);
+      // console.log(entry.target);
     } else {
       // 요소가 화면에서 사라지면 'is-visible' 클래스 제거
       entry.target.classList.remove("is-visible");
