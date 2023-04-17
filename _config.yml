@@ -1,6 +1,7 @@
 title:
 description: Long Form Jekyll theme built with SASS
 
+baseurl: /blog
 url: https://didfodms.github.io
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
